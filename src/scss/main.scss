@@ -1,0 +1,1719 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+/* Libraries */
+@import "./libs/slick_slider.scss";
+
+
+.main {
+    background: inherit;       
+  }
+
+  .intro {
+    position: relative;    
+    width: 1600px;
+    height: 900px;      
+    background-image: url(./../images/jpg/kamchatka_tour.jpg);
+    background-color: rgba(59, 59, 59, 0.5);
+    background-blend-mode: overlay;   
+    background-size: cover;
+    background-position: 0 80%; 
+  
+
+  .intro__text {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 1400px;
+        height: auto;
+        margin-left: 200px;
+        padding: 25px 192px 68px 261px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.78) 100%);
+        text-align: right;
+
+        h4 {
+          width: 947px;
+          color: #FFF;          
+          font-family: var(--font-main);
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%; /* 48px */
+          letter-spacing: 0.96px;
+          text-transform: uppercase;
+        }
+
+        h2 {
+          width: 947px;
+          color: #FFF;          
+          font-family: var(--font-main);
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%;
+          letter-spacing: 1.92px;
+          text-transform: uppercase;
+          margin-bottom: 23px;
+        }
+
+        p {display: block;
+          width: 735px;
+          color: #7E7E7E;
+          text-align: right;
+          font-family: var(--font-main);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 25.6px */
+          letter-spacing: -0.32px;
+          margin-left: auto;
+          margin-bottom: 18px;    
+        }
+
+        .text__btn {
+          width: 200px;
+          height: 50px;
+          background: var(--accent);    
+        }
+      }
+      .intro__date {
+        position: absolute;
+        width: 261px;
+        height: 342px;
+        left: 137px;
+        top: -5px;
+        background: #29343E;        
+        @include flex-between;
+        justify-content: center;
+        align-items: flex-start;
+
+        :first-child {
+          display: block;
+          width: 107px;
+          color: var(--accent);
+          font-family: $fira;
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 134.4px */
+          letter-spacing: 1.44px;
+          text-transform: uppercase;
+          padding-top: 148px;
+          padding-left: 20px;          
+        }
+
+        :last-child {
+          display: block;
+          width: 52px;
+          color: #646464;
+          font-family: $fira;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 42px */
+          letter-spacing: 0.45px;
+          text-transform: uppercase;
+          padding-top: 170px;
+          margin-left: 20px;
+        }
+      }
+  }
+  .intro__view {
+    width: 280px;
+    height: 90px;
+    position: absolute;
+    top: 346px;
+    left: 200px;
+    @include flex-between;
+
+    * {
+      display: block;
+    }
+
+    p {
+      color: #FFF;
+      font-family: $fira;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 36px */
+      letter-spacing: 0.72px;
+      text-transform: uppercase; 
+    }
+  }
+
+  .prev {    
+    margin-right: 30px;
+  }
+
+  .bg-image {
+    background-image: linear-gradient(180deg, #29343E 0%, rgba(41, 52, 62, 0.00) 100%), url(./../images/jpg/main_hill.jpg);    
+    background-size: cover;
+    background-position: right 40% bottom 10%;
+  }
+
+  .about {
+    padding: 103px 199px 135px 200px;
+        
+  }
+
+  .about__titles {
+    margin-left: -142px;
+     display: flex;
+     justify-content: flex-start;
+
+     * {
+      display: block;
+     }
+  }
+
+  .yel-color {
+    color: var(--accent);
+  }  
+
+  .title {
+    width: 539px;
+    color: #FFF;
+    font-family: var(--font-main);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 50.4px */
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+    margin-bottom: 51px;
+
+  }
+
+  .about__buttons {
+    @include flex-between();
+
+     :nth-child(2), :last-child {
+      background: rgba(0, 0, 0, 0.14);      
+      color: var(--accent);
+
+      #what {
+          color: #ffffff;
+      }
+      #who {
+        color: #ffffff;
+      }
+     }
+  }
+
+  .subtitle {
+    width: 100px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: $inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5px;    
+    margin-right: 42px;
+  }
+
+  .info-btn {
+    display: block;
+    width: 387px;
+    height: 78px;
+    border-radius: 16px;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    backdrop-filter: blur(7.5px);
+    text-align: left;
+    padding-left: 20px;
+    color: #29343E;
+    font-family: var(--font-main);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 42px */
+    text-transform: uppercase;
+    margin-bottom: 69px;   
+  }
+
+  .info-article {
+    @include flex-between;
+  }
+
+  .info-text {
+    img {      
+      margin-bottom: 46px;
+    }
+
+    p {
+      width: 557px;
+      color: #FFF;
+      font-family: $inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: 0.24px;      
+    }
+  }
+
+  .tours {
+    position: relative;
+    padding: 7px 199px 190px 200px;   
+      
+  }
+
+  .tours__titles {
+    margin-left: -142px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 120px;    
+  }  
+
+  .tours__countries {
+    position: relative; 
+  }  
+
+  .count-line {
+    position: absolute;    
+    width: 134%;
+    height: 2px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.90) 49.79%, rgba(255, 255, 255, 0.20) 100%);    
+    padding: 0;
+    top: 70px;
+    margin-left: -200px;
+    margin-right: -150px;       
+  }
+
+  .tour-items {           
+    @include flex-between();
+    margin-top: -100px;
+
+      a > img {
+        position: relative;
+        display: block;
+        z-index: 2;
+      }
+  }
+
+  .item {
+    position: relative;    
+  }
+
+  .rect-Mexico {
+    position: absolute;
+    width: 82px;
+    height: 76px;    
+    background: #14191F;
+    top: 0;
+    left: 10px;
+    z-index: 1;    
+  }
+
+  .rect-Brazil {
+    position: absolute;
+    width: 106px;
+    height: 76px;
+    background: #111416;
+    top: 0;
+    left: 24px;
+    z-index: 1;
+  }
+
+  .rect-India {
+    position: absolute;
+    width: 106px;
+    height: 76px;    
+    background: #14191F;
+    top: 0;
+    left: -4px;
+    z-index: 1;
+  }
+  
+.tour-cards {
+  background: linear-gradient(180deg, #090909 0%, rgba(41, 52, 62, 0.00) 100%);  
+  padding: 0 123px;  
+}
+
+.sakhalin_1 {
+  position: relative;
+  width: 1354px;
+  height: 579px;
+  border: 1px solid var(--accent);
+  @include flex-between;
+  margin-bottom: 215px;
+  
+  
+    img [alt="Sakhalin-1"] {
+      display: block;
+      
+      @include adaptive-img;
+    }
+
+  .card-photo-1 {
+    position: absolute;
+    left: 29px;
+    margin-top: -90px;
+
+    p {
+      display: block;
+      position: absolute;      
+      transform: rotate(-90deg);
+      bottom: 182px;
+      left: -115px;
+      color: rgba(255, 255, 255, 0.70);
+      font-family: $panton;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 36px */
+      letter-spacing: 20.16px;
+      text-transform: uppercase;      
+    }
+  }
+}
+
+.marg {
+  margin-bottom: 39px;
+}
+
+.yel-date {
+  color: var(--accent);
+}
+
+.card_text-1 {
+  position: absolute;
+  top: 52px;
+  right: 26px;
+  width: 651px;
+  height: 564px;
+  background: rgba(16, 19, 21, 0.41);
+  backdrop-filter: blur(29px);
+  padding: 18px 0 0 31px;
+
+    h3 {      
+      font-family: $montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;      
+    }
+
+    h6 {
+      color: #447F8D;
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 29px;
+    }
+
+    .dates {      
+      font-family: var(--font-main);
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 0.45px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+
+      
+    }
+
+    .line-card {            
+      background-color: #447F8D;      
+      height: 1px;
+      width: 98%;
+      margin-left: -32px;      
+      margin-bottom: 15px;   
+    }
+
+    .para {
+      width: 485px;
+      color: rgba(255, 255, 255, 0.48);
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: -0.32px;
+      margin-bottom: 52px;      
+    }
+
+    .pax {
+      color: rgba(255, 255, 255, 0.43);
+      text-align: right;
+      font-family: $circe;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 350;
+      line-height: normal;
+      margin-right: 29px;     
+    }
+    .price {      
+      text-align: right;
+      font-family: var(--font-main);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 56px */
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-right: 29px;
+      margin-bottom: 19px;     
+    }
+
+    button {
+      width: 278px;
+      height: 50px; 
+      color: #000;
+      text-align: center;
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: -0.32px;
+      text-transform: uppercase; 
+      background: var(--accent);      
+    }
+
+    .tours-book {
+      display: flex;
+      align-items: center;
+      margin-bottom: 26px;
+      
+      a > h5 {
+        width: 313px;
+        height: 50px;
+        padding: 11px 0;
+        color: #FFF;
+        text-align: center;
+        font-family: var(--font-main);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: -0.32px;
+        text-transform: uppercase; 
+        border: 1px solid rgba(255, 255, 255, 0.80);        
+      }
+    }
+
+  .stars {
+    text-align: right;
+    padding-right: 18px;
+  }
+}
+
+.conditions {
+  @include flex-center;
+
+    img {
+      margin-right: 7px;
+    }
+
+    p span {
+      margin-right: 23px;
+    }
+}
+
+.guides {
+  width: 1600px;
+  height: 888px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  background-image: linear-gradient(180deg, #29343E 7.08%, rgba(41, 52, 62, 0.72) 52.92%, #29343E 100%), url(./../images/jpg/guides.jpg);
+  padding: 350px 0 113px 201px;
+
+    h4 {
+      width: 100px;
+      color: rgba(255, 255, 255, 0.70);
+      font-family: $inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 5px;    
+      margin-right: 42px;      
+    }
+
+    h2 {       
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 50.4px */
+      text-transform: uppercase;    
+    } 
+    
+    h2 span {
+      color: var(--accent);
+    }
+
+    p {
+      width: 411px;      
+      font-family: $inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: 0.24px;
+    }
+}
+
+
+.guides__titles {
+  margin-left: -142px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+
+  
+}
+
+.guides_text {
+  margin-right: 38px;
+}
+
+.guide_items {
+  min-width: 945px;
+  @include flex-left;  
+  flex-wrap: nowrap;    
+  overflow-x: auto;
+  overflow-y: hidden;
+  
+  &::-webkit-scrollbar {
+    width: 1px;      
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #FFF;
+    border-radius: 5px;
+    border-top: 9px solid #273641;
+    border-bottom: 9px solid #273641;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--accent);
+    border-top: 7px solid #273641;
+    border-bottom: 7px solid #273641;    
+  }      
+}
+
+.guide_item {  
+  position: relative;
+  min-width: 220px;
+  min-height: 317px;
+  margin-bottom: 62px;
+  margin-top: 31px;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+      transition: transform .1s linear;      
+    } 
+}
+
+.guide-photo-1, .guide-photo-2, .guide-photo-3, .guide-photo-4 {
+  border-radius: 12px;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.40);
+  margin-right: 35px;   
+}
+
+.guide-photo-1 {
+  margin-left: 20px;
+  background-image: url(./../images/jpg/guide_1.jpg);
+  
+}
+
+.guide-photo-2 {
+  background-image: url(./../images/jpg/guide_2.jpg);
+  
+}
+
+.guide-photo-3 {
+  background-image: url(./../images/jpg/guide_3.jpg);
+  
+}
+
+.guide-photo-4 {
+  background-image: url(./../images/jpg/guide_2.jpg);
+  
+}
+
+.item_text {
+  position: absolute;
+  width: 220px;
+  height: 101px;
+  bottom: 0;
+  border-radius: 0px 0px 12px 12px;
+  background: rgba(29, 29, 29, 0.25);
+  backdrop-filter: blur(7px);
+  padding: 8px 88px 14px 17px;  
+}
+
+.guide_stars {
+  width: 150px;
+}
+
+.pak-intro {
+  position: relative;  
+  width: 100%;
+  min-height: 808px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%), url(./../images/jpg/north-pak_1.jpg);  
+  background-size: cover;  
+}
+
+.pak_intro_info {
+  position: relative;
+  padding: 308px 242px 0 206px;
+
+  h2 {
+    
+    font-family: var(--font-main);
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 70px */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 17px;   
+  }
+
+  h3 {
+    color: var(--accent);
+    font-family: $denistina;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 102%; /* 91.8px */
+    letter-spacing: -1.8px;    
+  }
+}
+
+.route {  
+  position: relative;
+  text-align: center;
+  width: 1125px;
+  height: 246px;
+  margin: 0 auto;
+  padding-bottom: 105px;
+}
+
+.points-1, .points-2, .points-3, .points-4, .points-5, .points-6, .points-7, .points-8, .points-9, .points-10 {  
+  position: absolute;
+  font-family: $inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.24px;
+  
+    p span {
+      margin-right: 12px;
+    }
+}
+
+.add__p {
+  display: flex;
+  align-items: center;
+}
+
+.points-1 {
+  bottom: 45px;
+  left: 0;
+}
+
+.points-2 {
+  bottom: 85px;
+  left: 150px;
+}
+
+.points-3 {
+  bottom: 150px;
+  left: 300px;
+}
+
+.points-4 {
+  bottom: 170px;
+  left: 400px;
+}
+
+.points-5 {
+  bottom: 120px;
+  left: 500px;
+}
+
+.points-6 {
+  bottom: 130px;
+  left: 640px;
+}
+
+.points-7 {
+ bottom: 200px;
+ left: 750px;
+}
+
+.points-8 {
+  top: 0;
+  right: 170px;
+}
+
+.points-9 {
+  top: 50px;
+  right: 160px;
+}
+
+.points-10 {
+  top: 90px;
+  right: 80px;
+}
+
+.pak_booking {
+  padding: 17px 265px 27px 170px;
+  margin: 0 36px;
+  border-radius: 5px;
+  background: #212B34;
+  border: 12px solid #34424F;  
+  box-shadow: 0 0 15px 10px inset #34424F;
+}
+
+.booking_text {  
+  @include flex-between;
+
+  h4 {    
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+    letter-spacing: -0.4px;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);    
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    
+      &::after {
+        display: block;
+        content: "";
+        width: 201px;
+        height: 1px;
+        background-color: var(--accent);
+        margin-top: 4px;
+        margin-bottom: 14px;
+      }
+  }
+
+  p {
+    max-width: 632px;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.58);
+    text-align: right;
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: -0.24px;    
+  }
+}
+
+.booking_form {
+  @include flex-between;
+
+  div {
+      width: 255px;
+      height: 38px;
+      border-radius: 20px;
+      background: #FFF;
+      color: #020000;
+      font-family: var(--font-main);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 19.2px */
+      letter-spacing: -0.24px;
+      padding-top: 10px;
+      padding-left: 27px;                       
+    }
+  .book__btn {
+      background: var(--accent);
+      padding-left: 0;
+
+      & input {
+      width: 100%;
+      text-align: center;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: -0.32px;
+      text-transform: uppercase;
+      }            
+    }  
+}
+
+.calend-intro {
+  position: relative;  
+  width: 100%;
+  min-height: 646px;
+  background-image:  url(./../../images/jpg/calendar.jpg);  
+  background-size: cover; 
+}
+
+.calend_title {
+  position: absolute;        
+  right: 205px;
+  bottom: 158px;
+  max-width: 872px;
+  text-align: right;
+  font-family: $gadugi;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120.5%; /* 115.68px */
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  
+  & span {
+    color: var(--accent);         
+}
+}
+
+.month {
+  position: relative;
+  @include flex-center;
+  padding: 18px 0;
+
+  
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    bottom: 81px;
+  }
+}
+
+.month_item { 
+  position: relative; 
+  margin-right: 225px;
+  text-align: center;
+  z-index: 1;
+  
+  &:hover {
+    
+    p {
+      color: #FFF;
+      font-size: 25px;
+      transition: .2s ease-in-out;
+    }
+
+    img[alt="Month_ellipse"] {
+      opacity: 0;
+      transition: .2s ease-in-out;
+    }
+
+    img[alt="Ell_hover"] {
+      opacity: 1;
+      transition: .2s ease-in-out;
+    }
+
+    img[alt="Circle_hover"] {
+      opacity: 1;
+      transition: .2s ease-in-out;
+    }
+  }    
+
+    p {
+    color: rgba(255, 255, 255, 0.30);
+    text-align: center;
+    font-family: $circe;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 183.9%; /* 40.458px */  
+    }
+  }
+  
+  .mon_ell {    
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+  
+    img {      
+      position: absolute;      
+      bottom: 0;     
+
+      &[alt="Month_ellipse"] {
+        top: 54%;
+        left: 49%; 
+      }
+      
+      &[alt="Ell_hover"] {        
+        opacity: 0;
+        bottom: 12%;
+        left: 45%;               
+      }        
+
+      &[alt="Circle_hover"] {
+        opacity: 0;
+        top: 35%;
+        right: 2%;        
+      }
+    }
+  }  
+
+.add_month {
+  margin-right: 0;
+}
+
+.fall {
+  position: relative;
+  @include flex-between;
+  width: 100%;
+  height: 1235px;
+  padding: 219px 220px 313px 206px;
+  background-image: linear-gradient(180deg, #29343E 0%, rgba(41, 52, 62, 0.00) 0%), url(./../images/svg/fall_vector.svg);
+  background-size: cover;
+}
+
+.fall_text {
+  max-width: 480px;
+
+  h3 {    
+    font-family: $gadugi;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 50.4px */
+    text-transform: uppercase;
+    margin-bottom: 34px;    
+  }  
+
+  > p {
+    font-family: $gadugi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: -0.32px;
+    margin-bottom: 67px;   
+  }
+}
+
+.fall_issues {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 26px;
+  row-gap: 34px;
+  width: 541px;
+  margin-bottom: 56px; 
+}
+
+.issue {
+  width: 215px;
+
+  h5 {    
+    font-family: $gadugi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+    letter-spacing: -0.4px;    
+  }
+
+  p {
+    font-family: $gadugi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: -0.32px;
+
+    &::after {
+      display: block;
+      content: " ";
+      width: 203px;
+      height: 1px;
+      background-color: var(--accent);
+      margin-top: 13px;    
+    }    
+  }
+}
+
+.issue_title {
+  @include flex-left;
+  margin-bottom: 11px;
+
+  img {
+    margin-right: 21px;
+  }
+
+  img[alt="Dates"] {
+    margin-bottom: 5px;
+  }
+
+  img[alt="Money"] {
+    margin-bottom: -13px;
+  }
+}
+
+.fall_book_btn {
+  width: 507px;
+  height: 50px;
+  border-radius: 20px;
+  background: var(--accent);
+  color: #000;
+  font-family: $gadugi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;       
+}
+
+.know_more {
+  position: absolute;
+  @include flex-left;
+  top: 121px;
+  right: 54px;
+
+  p {
+  color: #FFF;
+  font-family: $inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  text-decoration-line: underline;
+  }    
+}
+
+.blog-intro {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  background-image: url(./../images/jpg/blog_intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog_intro_info {
+  padding: 324px 225px 0 405px;  
+  text-align: right;
+
+  h1 { 
+    text-align: right;
+    font-family: var(--font-main);
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122%; /* 117.12px */
+    letter-spacing: 1.92px;
+    text-transform: uppercase;    
+    margin-bottom: 115px;
+    
+    & span {
+      color: var(--accent);
+    }
+  }
+}
+
+.art_intro {
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  background-image: url(./../images/jpg/article_intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+    h1 {
+      text-align: center;
+      font-family: var(--font-main);
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 96px */
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+      margin-bottom: 17px;
+      margin-top: 264px;
+    }
+
+    .art_intro_para {
+      max-width: 507px;
+      width: 100%;
+      text-align: center;
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: -0.32px;
+      margin: 0 auto 20px;      
+    }
+}
+
+.carousel {
+  margin-top: auto; 
+}
+
+.art_btn {
+  display: block;  
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: var(--accent);
+  color: #000;  
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  margin: 0 auto;  
+}
+
+.art_calendar {
+  position: absolute;
+  width: 54px;
+  height: 219px;
+  right: 71px;
+  bottom: 45%;
+
+    .cal_fig {
+      width: 54px;
+      color: #646464;
+      font-family: $fira;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 42px */
+      letter-spacing: 0.45px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      
+        &:hover {
+          @include flex-between;
+          width: 125px;
+          color: var(--accent);
+          font-family: $fira;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 67.2px */
+          letter-spacing: 0.72px;
+          text-transform: uppercase;
+          transition: .2s linear;
+
+          &::after {
+            display: block;
+            content: "";
+            width: 62px;
+            height: 3px;
+            background-color: var(--accent);
+          }
+        }
+    }
+}
+
+.pak_fall {
+  padding: 140px 199px 0 203px;
+
+  h4 {
+    max-width: 906px;    
+    font-family: var(--font-main);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 51.2px */
+    letter-spacing: -0.64px;
+    margin-left: 55px;
+    margin-bottom: 23px;
+    
+    & span {
+      color: var(--accent);
+    }
+  }
+
+  p {
+    max-width: 688px;    
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: -0.32px;
+    margin-left: auto;
+    margin-bottom: 30px; 
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+}
+
+.fall_theme {
+  @include flex-between;
+  margin-bottom: 36px;
+}
+
+.fall_subtitle, .fall_subt-left {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: $inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fall_subt-left {
+  margin-left: -123px;
+  margin-right: 70px; 
+}
+
+.fall_title {  
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 50.4px */
+  text-transform: uppercase;
+  margin-right: auto;  
+
+    & span {
+      color: var(--accent);
+      font-family: var(--font-main);
+    }
+}
+
+.fall_item-2 {
+  @include flex-between;
+  position: relative;
+
+  img[alt="Pak Fall-2"] {
+    margin-bottom: 25px;
+  }
+
+  h6 span {
+    position: absolute;
+    top: 500px;
+  }
+}
+
+.fall_item-3 {
+  position: relative;
+
+    h6 span {
+      position: absolute;
+      bottom: 290px;
+    }
+
+    .h4_add {
+      margin-bottom: 77px;
+    }
+}
+
+.item-2_text {
+  max-width: 554px;
+  color: #8C8C8C;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;  
+}
+
+.art_tours {
+  min-height: 865px;
+  width: 100%;
+  padding: 317px 123px 0 200px;
+
+  #tours {
+    position: absolute;
+    left: 296px;
+  }
+}
+
+.add_hill {
+  background: linear-gradient(180deg, #29343E 0%, rgba(41, 52, 62, 0.00) 100%);  
+}
+
+.art_tours_title {
+  position: relative;
+  @include flex-between;
+  align-items: baseline;
+
+    h3 {      
+      font-family: var(--font-main);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 50.4px */
+      text-transform: uppercase;
+      
+      & span {
+        color: var(--accent);
+      }
+    }    
+}
+
+.reference {
+  @include flex-between;
+  width: 243px;
+
+  p {
+    color: var(--accent);
+    font-family: $inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: -0.32px;
+    text-decoration-line: underline;    
+  }
+}
+
+.cont_intro {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-image: url(./../images/jpg/contacts_intro.jpg);
+}
+
+.cont_intro_info {
+  text-align: right;
+  padding: 300px 266px 0 0;
+
+  p {    
+    font-family: var(--font-main);
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    
+      & span {
+        color: var(--accent);
+      }
+  }
+}
+
+.cruise_intro {
+  position: relative;  
+  width: 100%;
+  min-height: 773px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(41, 52, 62, 0.78) 100%), url(./../images/jpg/cruise_intro.jpg) 0 50% / 1434px auto  no-repeat;  
+}
+
+.cruise_title {
+  padding-top: 618px;
+  margin-left: -189px;
+  @include flex-center;
+  align-items: flex-start;
+
+    h1 {
+      font-family: var(--font-main);
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 80%;
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+      margin-right: 50px;      
+    }
+
+    .title_para {
+      max-width: 432px;
+      font-family: var(--font-main);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+      letter-spacing: -0.32px;      
+    }
+}
+
+.cruise_welcome {
+  padding: 187px 241px 0 230px;
+  width: 100%;
+  min-height: 878px;
+  background: linear-gradient(180deg, #29343E 0%, rgba(41, 52, 62, 0.60) 52.69%, rgba(41, 52, 62, 0.92) 70%), url(./../images/jpg/cruise_welcome.jpg);
+
+    h6 {
+      max-width: 551px;    
+      font-family: var(--font-main);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%; /* 32px */
+      letter-spacing: -0.4px;
+      margin-bottom: 43px;
+      margin-left: 33px;
+      
+      & span {
+        color: var(--accent);
+      }
+    }
+}
+
+.welcome_title {
+  position: relative;
+  margin-bottom: 41px;
+
+  h2 {
+    font-family: $denistina;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101%; /* 101px */
+    letter-spacing: 6.5px;   
+    
+  }
+}
+
+#onboard {
+  color: var(--accent);
+  margin-left: 62%;      
+}
+
+.welcome_para { 
+  max-width: 540px;  
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.32px;
+  margin-left: 410px;
+  margin-bottom: 20px; 
+}
+
+.cruise_month {
+  position: relative;
+  @include flex-center;
+  padding: 18px 0;
+
+  
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    bottom: 81px;
+  }
+}
+
+.cruise_program {
+  padding: 155px 0 88px;
+}
+
+.cruise_items {
+  
+  &::after {
+      display: block;
+      content: "";
+      max-width: 1440px;
+      background: var(--accent);
+      height: 1px;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+}
+
+.item-common {
+  position: relative;
+  padding-bottom: 373px;  
+}
+
+.add_common {
+  margin-bottom: -84px;
+}
+
+.cruise_item-1 {    
+  width: 1600px;
+  height: 555px; 
+  background-image: url(./../../images/jpg/cruise_item-1.jpg);    
+  background-repeat: no-repeat;  
+}
+
+.cruise_item-2 {    
+  width: 1600px;
+  height: 555px; 
+  background-image: url(./../../images/jpg/cruise_item-2.jpg);   
+  background-repeat: no-repeat;
+  background-position: 0 53%;
+  background-size: cover;
+
+}
+
+.cruise_title {
+  position: relative;
+  margin-bottom: 185px;
+
+  h1 {
+      width: 1027px;
+      color: rgba(255, 255, 255, 0.05);
+      font-family: var(--font-main);
+      font-size: 160px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%; /* 256px */
+      letter-spacing: -3.2px;
+      margin-left: 16px;              
+  }
+
+  h5 {
+      position: absolute;
+      bottom: 50px;
+      left: 139px;       
+      font-family: var(-font--main);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 50.4px */
+      text-transform: uppercase;
+      
+      & span {
+          color: var(--accent);
+      }
+  }
+}
+
+.cruise_card-1 {
+  position: absolute;         
+  width: 715px;
+  height: 785px;
+  padding: 37px 28px;
+  right: 206px;
+  top: -115px;
+  background: rgba(32, 42, 51, 0.70);
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(24.5px);        
+}
+
+.cruise_card { 
+  position: relative;
+  width: 659px;
+  height: 711px;   
+  padding: 0 65px 48px 79px;    
+  border: 1px dashed var(--accent);
+  
+
+  h3 {
+      font-family:$denistina;
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      margin-bottom: 28px;
+      
+      & span {
+          color: var(--accent);
+      }
+  }
+
+      h6 {       
+          font-family: var(--font-main);
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 33.6px */
+          text-transform: uppercase;
+          margin-left: 4px;                  
+      }
+
+      p {
+          width: 515px;
+          height: 283px;            
+          font-family: var(--font-main);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 25.6px */
+          letter-spacing: .32px;
+          margin-bottom: 30px;                     
+      }
+
+      ul {            
+          padding-left: 16px;
+          list-style-type: disc;                        
+
+          li {                
+              list-style: disc;                
+              font-family: var(--font-main);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 160%; /* 25.6px */
+              letter-spacing: -0.32px;
+              list-style-image: url(./../../images/svg/list_marker.svg);                
+              
+          }
+      }
+}
+
+.cruise_calendar {
+  @include flex-left;
+  margin-bottom: 26px;
+}
+
+.cruise_date-1 {
+  position: absolute;
+  bottom: -23px;
+  right: -23px;   
+     
+
+  p {
+      color: #29343E;
+      font-family: $gadugi;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 22.4px */
+      letter-spacing: 2.45px;        
+  }
+
+  h4 {
+      color: #29343E;
+      font-family: $gadugi;
+      font-size: 95px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%; /* 152px */
+      letter-spacing: -1.9px;        
+  }
+}
+
+.date_text {
+  position: absolute;
+  margin: 0 auto;
+  width: 120px;
+  bottom: 40px;
+  right: 10px;
+}
+

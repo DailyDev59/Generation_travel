@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Календарь</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calend-intro">
+        @@include('blocks/header_3.html') @@include('blocks/intro_nets_2.html')
+        <div class="calend_title">КаЛЕНДАРЬ <span>путешествий</span></div>
+      </div>
+      <div class="main">
+        <div class="month">
+          <a href="#!">
+            <div class="month_item">
+              <div class="mon_ell">
+                <img
+                  src="./../images/svg/month_ellipse.svg"
+                  alt="Month_ellipse"
+                />
+                <img
+                  src="./../images/svg/month_ellipse_hover.svg"
+                  alt="Ell_hover"
+                />
+                <img
+                  src="./../images/svg/month_circle_hover.svg"
+                  alt="Circle_hover"
+                />
+              </div>
+              <p>ОКТЯБРЬ</p>
+            </div>
+          </a>
+          <a href="#!">
+            <div class="month_item">
+              <div class="mon_ell">
+                <img
+                  src="./../images/svg/month_ellipse.svg"
+                  alt="Month_ellipse"
+                />
+                <img
+                  src="./../images/svg/month_ellipse_hover.svg"
+                  alt="Ell_hover"
+                />
+                <img
+                  src="./../images/svg/month_circle_hover.svg"
+                  alt="Circle_hover"
+                />
+              </div>
+              <p>НОЯБРЬ</p>
+            </div>
+          </a>
+          <a href="#!">
+            <div class="month_item add_month">
+              <div class="mon_ell">
+                <img
+                  src="./../images/svg/month_ellipse.svg"
+                  alt="Month_ellipse"
+                />
+                <img
+                  src="./../images/svg/month_ellipse_hover.svg"
+                  alt="Ell_hover"
+                />
+                <img
+                  src="./../images/svg/month_circle_hover.svg"
+                  alt="Circle_hover"
+                />
+              </div>
+              <p>ДЕКАБРЬ</p>
+            </div>
+          </a>
+        </div>
+        <div class="fall">
+          <a href="#!">
+            <div class="know_more">
+              <p>Узнать больше</p>
+              <img src="./../images/svg/arr_right.svg" alt="Arr_right"/>
+            </div>
+          </a>
+          <div>
+            <img src="./../images/jpg/fall.jpg" alt="Fall"/>
+          </div>
+          <div class="fall_text">
+            <h3>ПАКИСТАН</h3>
+            <p>
+              Осень в Пакистане, самое хорошее время для путешествия,
+              температура воздуха днём порядка +20 градусов. НО, мы будем
+              подниматься в горы, поэтому необходимо брать в минимальном
+              количестве теплую одежду.<br />
+              Максимальный трек в горах составляет 6 км до северного базового
+              лагеря Нанга Парбат, Фейри Медоуз (2 часа) – высота 3200 метров.
+              Средняя высота всей поездки 2000 метров.
+            </p>
+            <div class="fall_issues">
+              <div class="issue">
+                <div class="issue_title">
+                  <img src="./../images/svg/fall_loc.svg" alt="Location"/>
+                  <h5>Вид отдыха</h5>
+                </div>
+                <p>
+                  Фотопутешествие, горный<br />
+                  трекинг, приключения
+                </p>
+              </div>
+              <div class="issue">
+                <div class="issue_title">
+                  <img src="./../images/svg/fall_date.svg" alt="Dates"/>
+                  <h5>Даты</h5>
+                </div>
+                <p>
+                  6 октября – 20 октября<br />
+                  2020 года
+                </p>
+              </div>
+              <div class="issue">
+                <div class="issue_title">
+                  <img src="./../images/svg/fall_money.svg" alt="Money"/>
+                  <h5>Стоимость</h5>
+                </div>
+                <p>
+                  <span
+                    >Стоимость участия<br />
+                    составляет 2690 евро</span
+                  >
+                </p>
+              </div>
+              <div class="issue">
+                <div class="issue_title">
+                  <img src="./../images/svg/fall_req.svg" alt="Regulations"/>
+                  <h5>Требования</h5>
+                </div>
+                <p>
+                  Хорошая физическая форма,<br />
+                  опыт горных походов
+                </p>
+              </div>
+            </div>
+            <button class="fall_book_btn">заБронировать</button>
+          </div>
+        </div>
+        @@include('blocks/comms.html') @@include('blocks/footer_2.html')
+      </div>
+    </div>
+    <script src="./js/calendar.bundle.js"></script>
+  </body>
+</html>

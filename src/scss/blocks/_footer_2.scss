@@ -1,0 +1,96 @@
+.footer_2 {
+	width: 1601.89px;
+	height: 396px;	
+	padding: 49px 201px 30px 58px;
+
+	hr {
+		width: 1439.699px;
+		height: 1px;
+		background: rgba(243, 243, 243, 0.40);
+		margin-top: 34px;
+		margin-bottom: 20px;
+	}
+
+	& > p {	
+	text-align: center;	
+	font-family: $inter;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%; /* 19.2px */
+	text-decoration-line: underline;
+	padding-left: 142px;
+	}
+}
+
+
+.footer_text {
+	@include flex-between;
+	
+
+	h4 {		
+		font-family: $gadugi;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 140%; /* 28px */
+		letter-spacing: 1.22px;
+		text-transform: uppercase;
+		margin-bottom: 31px;		
+	}
+
+	p {
+		color: rgba(255, 255, 255, 0.42);
+		font-family: $gadugi;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 25.6px */
+		letter-spacing: 1.25px;
+		margin-bottom: 10px;
+	}	
+}
+
+.footer_item-3 {
+	margin-top: -35px;
+
+	h4 {
+		margin-bottom: 10px;
+	}
+
+	p {
+	padding-top: 7px;
+}
+}
+
+.contacts-data {
+	width: 260px;
+	@include flex-left;
+	align-items: center;	
+
+	img {
+		margin-right: 9px;
+	}
+}
+
+.logo-1 {	
+	margin-top: -40px;
+	margin-left: -20px;		
+
+	* {
+		display: block;
+	}
+
+	img[alt="Footer_logo"] {
+		margin-bottom: 30px;
+	}	
+}
+
+.footer_nets {
+	@include flex-left;
+
+	img[alt="Whatsapp"] {
+		margin-right: 19px;
+		margin-left: 146px;
+	}
+}

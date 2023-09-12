@@ -1,0 +1,31 @@
+.header_1 {
+    position: absolute;
+    padding: 44px 71px 20px 79px;
+    @include flex-left;
+    align-items: flex-start;
+    margin-top: -8px;
+    z-index: 10;   
+
+    nav.header-menu {
+        width: 601px;
+        @include flex-between;        
+        margin: -3px 112px 0 399px;
+    }
+
+    p {
+        @include gadugi-bold;
+        letter-spacing: .5;
+    }
+
+    .nav-btn {
+        margin-left: 109px;
+    
+        div {
+        width: 42px;
+        height: 5px;
+        border-radius: 7px;
+        background-color: #FFBD4E;;
+        margin: 6px 0;
+    }
+    }
+}

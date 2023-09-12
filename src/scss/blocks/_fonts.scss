@@ -1,0 +1,183 @@
+/* fira-sans-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./../../fonts/fira-sans-v17-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* fira-sans-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./../../fonts/fira-sans-v17-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* fira-sans-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./../../fonts/fira-sans-v17-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./../../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./../../fonts/montserrat-v25-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./../../fonts/montserrat-v25-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./../../fonts/inter-v12-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./../../fonts/inter-v12-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./../../fonts/inter-v12-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* circe-400 */
+  @font-face {
+      font-family: 'Circe';
+      src: url('./../../fonts/Circe-Regular.woff2');      
+      font-style: normal;
+  }
+  /* circe-700 */
+  @font-face {
+      font-family: 'Circe';
+      src: url('./../../fonts/CirceBold.woff');      
+      font-weight: 700;
+      font-style: normal;
+  }
+  /* circe-350 */
+  @font-face {
+      font-family: 'Circe';
+      src: url('./../../fonts/CRC35.otf');      
+      font-weight: 350;
+      font-style: normal;
+  }
+  /* panton-extrabold */
+  @font-face {
+      font-family: 'Panton';
+      src: url('./../../fonts/Panton-ExtraBold.woff');      
+      font-weight: 800;
+      font-style: normal;
+  }
+  /* panton-regular */
+  @font-face {
+      font-family: 'Panton';
+      src: url('./../../fonts/Panton-Regular.woff');      
+      font-weight: normal;
+      font-style: italic;
+  }
+  /* gadugi-regular */
+  @font-face {
+    font-family: 'Gadugi';
+    src: url('./../../fonts/gadugi-normal.ttf');  
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* gadugi-bold */
+  @font-face {
+    font-family: 'Gadugi';
+    src: url('./../../fonts/gadugi-bold.ttf');  
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* catalina-regular */
+  @font-face {
+    font-family: 'Catalina';
+    src: url('./../../fonts/Catalina.otf');  
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* denistina-regular */
+  @font-face {
+    font-family: 'Denistina';
+    src: url('./../../fonts/denistina_en.ttf');  
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* helvetica_neue_cyr-regular */
+  @font-face {
+      font-family: 'HelveticaNeueCyr';
+      src: url('./../../fonts/HelveticaNeueCyr-MediumItalic.woff');      
+      font-weight: 500;
+      font-style: normal;
+  }
+  /* helvetica_neue_cyr-regular_italic */
+  @font-face {
+      font-family: 'HelveticaNeueCyr';
+      src: url('./../../fonts/HelveticaNeueCyr-MediumItalic.woff');      
+      font-weight: 500;
+      font-style: italic;
+  }
+  /* helvetica_neue_cyr-bold */
+  @font-face {
+      font-family: 'HelveticaNeueCyr';
+      src: url('./../../fonts/HelveticaNeueCyr-Bold.woff');
+      font-weight: 700;
+      font-style: normal;
+  }
+  /* tahoma-regular */
+  @font-face {
+      font-family: 'Tahoma';
+      src: url('./../../fonts/Tahoma.woff');      
+      font-weight: normal;
+      font-style: normal;
+  }
+  /* helvetica-regular */
+  @font-face {
+      font-family: 'Helvetica';
+      src: url('./../../fonts/helvetica_regular.otf');	
+      font-weight: 400;
+      font-style: normal;
+  }
+  /* helvetica-bold */
+  @font-face {
+      font-family: 'Helvetica';
+      src: url('./../../fonts/helvetica_bold.otf');	
+      font-weight: 700;
+      font-style: normal;
+  }
+  /* helvetica-neue-regular */
+  @font-face {
+      font-family: 'Helvetica Neue';
+      src: url('./../../fonts/Helvetica\ Neue\ Regular.otf');	
+      font-weight: 400;
+      font-style: normal;
+  }

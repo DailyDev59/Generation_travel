@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="blog-intro">
+            @@include('blocks/header_3.html')
+            @@include('blocks/intro_nets_1.html')
+            <div class="blog_intro_info">
+                <h1>ИДЕИ<br> <span>ПУТЕШЕСТВИЙ</span></h1>
+            </div>
+            @@include('blocks/slick_slider.html')
+        </div>
+        @@include('blocks/ideas.html')
+        @@include('blocks/comms.html')
+        @@include('blocks/footer_2.html')
+    </div>
+    <script src="./js/blog.bundle.js"></script>
+</body>
+</html>

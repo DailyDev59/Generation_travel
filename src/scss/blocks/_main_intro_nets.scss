@@ -1,0 +1,50 @@
+.main_intro_nets {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 900px;   
+    padding: 276px 87px 140px;
+    background: #29343E;    
+      
+
+    a {
+            
+        p {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+        font-family: $montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 28.8px */
+        text-decoration-line: underline;            
+        
+        } 
+        
+        [alt="TW"] {
+            margin-bottom: 0;
+        }
+        
+    }
+    &::before {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 98px;
+        background: #F9F9F9;
+        margin: 0 auto 31px;
+    }
+
+    &::after {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 98px;
+        background: #F9F9F9;
+        margin: 31px auto 0;
+    }
+}

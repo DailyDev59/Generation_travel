@@ -1,0 +1,76 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--text-color);
+  font-family: var(--font-main);
+
+  // ::-webkit-scrollbar {
+  //   width:5px;      
+  // }
+  // ::-webkit-scrollbar-track {
+  //   background-color: #FFF;
+  //   border-radius: 5px;
+  //   border-top: 8px solid #273641;
+  //   border-bottom: 8px solid #273641;
+  // }
+
+  // ::-webkit-scrollbar-thumb {
+  //   border-radius: 5px;
+  //   background: #FFBD4E;
+  //   border-top: 7px solid #273641;
+  //   border-bottom: 7px solid #273641;    
+  // }      
+}
+
+a {
+  color:#FFF;
+}
+
+$gadugi: 'Gadugi', sans-serif;
+$fira: 'Fira Sans', sans-serif;
+$inter: 'Inter', sans-serif;
+$panton: 'Panton', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$circe: 'Circe', sans-serif;
+$catalina: 'Catalina', sans-serif;
+$denistina: 'Denistina', sans-serif;
+
+@mixin flex-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @mixin flex-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @mixin flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin gadugi-bold {
+    color: #FFF;    
+    font-family: 'Gadugi', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.48px;
+  }
+  
+  @mixin adaptive-img {
+    display: block;
+    width: 100%;
+    height: auto;      
+  }  
+  
