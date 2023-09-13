@@ -1560,7 +1560,7 @@
   }
 }
 
-.add_common {
+.add_cru {
  margin-bottom: 258px;
 }
 
@@ -1779,5 +1779,55 @@
       background-color: var(--accent);
       margin-bottom: 16px;
     }
+  }
+}
+
+.antarctic-intro {
+  position: relative;  
+  width: 100%;
+  min-height: 866px;
+  background-image: url(./../images/jpg/antarctic.jpg);
+  background-size: cover;
+}
+
+.antarctic_booking {
+  position: relative;
+  padding: 17px 265px 27px 170px;
+  margin: -50px 36px 0;
+  border-radius: 5px;
+  background: #212B34;
+  border: 12px solid #34424F;  
+  box-shadow: 0 0 15px 10px inset #34424F;
+  z-index: 1;
+}
+
+.ant_book_text {  
+  @include flex-between;
+
+  h4 {    
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+    letter-spacing: -0.4px;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);    
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    margin-bottom: 23px;
+  }
+
+  p {
+    max-width: 632px;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.58);
+    text-align: right;
+    font-family: var(--font-main);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: -0.24px;    
   }
 }
