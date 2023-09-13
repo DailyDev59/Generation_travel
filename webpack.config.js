@@ -5,9 +5,9 @@ const config = {
     pakistan: './src/js/pakistan.js',
     calendar: './src/js/calendar.js',
     blog: './src/js/blog.js',
-    // article: './src/js/article.js',
-    // contacts: './src/js/contacts.js',
-    // cruises: './src/js/cruises.js'
+    article: './src/js/article.js',
+    contacts: './src/js/contacts.js',
+    cruises: './src/js/cruises.js'
     // about: './src/js/about.js',
   },
   output: {
