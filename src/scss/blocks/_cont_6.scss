@@ -195,7 +195,6 @@
     }
 }
 .ahead_photo {
-
     padding-left: 37px;
     border-left: 1px dashed var(--accent);    
 
@@ -304,7 +303,7 @@
 .impress_pics-1 {
     display: flex;
     justify-content: flex-start;
-    overflow-x: auto;
+    overflow-x: auto;    
 
     &::-webkit-scrollbar {
         width: 1px;              

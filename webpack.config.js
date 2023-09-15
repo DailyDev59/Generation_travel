@@ -8,7 +8,8 @@ const config = {
     article: './src/js/article.js',
     contacts: './src/js/contacts.js',
     cruises: './src/js/cruises.js',
-    antarctic: './src/js/antarctic.js'
+    antarctic: './src/js/antarctic.js',
+    baikal: './src/js/baikal.js'
     // about: './src/js/about.js',
   },
   output: {
