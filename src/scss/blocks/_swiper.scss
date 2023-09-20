@@ -1,0 +1,40 @@
+.swipe {
+    // margin: 0 auto;
+    width: 489px;
+    height: 662px;
+    background-color: var(--page-bg);
+}
+
+.hidden {
+    display: none;
+}
+
+.info_card-1 {
+position: relative;
+max-width: 489px;
+height: 662px;
+background: url(./../images/jpg/info_tour-1.jpg) no-repeat;
+
+    p {
+    position: absolute;
+    font-family: $denistina;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 102%; /* 65.28px */
+    letter-spacing: -1.28px;
+    bottom: 17px;
+    right: 30px;
+    }
+}
+
+.controls {
+    width: 150px;
+    // margin: 0 auto;
+    margin-top: 32px;
+    
+    img[alt="Arr_left"] {
+        margin-right: 32px;
+        margin-left: 5px;
+    }
+}
