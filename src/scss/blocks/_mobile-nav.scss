@@ -1,17 +1,17 @@
 .mobile-nav {
-	position: fixed;
+	position: fixed;	
 	top: -100%;
-	width: 100%;
+	width: 30%;
 	height: 100%;
+	right: 19.5%;
     z-index: 99;
 
 	display: flex;
     flex-direction: column;
     align-items: center;
-	justify-content: flex;	
+	// justify-content: flex;	
     padding-top: 40px;
-    padding-bottom: 40px;
-    // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
+    padding-bottom: 40px;    
 	background: var(--page-bg);
 	transition: all 0.2s ease-in;
 }
@@ -32,13 +32,13 @@
 	flex-direction: column;
 	align-items: flex-start;
 	row-gap: 20px;
-	font-size: 28px;
+	font-size: 28px;	
 
 	& a {
 		text-align: start;
 	}
 
-	& .active {
-		opacity: 0.5;
-	}
+	// & .active {
+	// 	opacity: 0.5;
+	// }
 }

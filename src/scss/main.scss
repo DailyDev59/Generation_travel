@@ -305,11 +305,21 @@
     position: relative;    
   }
 
-  .rect-Mexico {
+  .rect-Mexico-1 {
     position: absolute;
     width: 82px;
     height: 76px;    
-    background: #14191F;
+    background: #1c2227;
+    top: 0;
+    left: 10px;
+    z-index: 1;    
+  }
+
+  .rect-Mexico-2 {
+    position: absolute;
+    width: 82px;
+    height: 76px;    
+    background: #15181D;
     top: 0;
     left: 10px;
     z-index: 1;    
@@ -325,11 +335,21 @@
     z-index: 1;
   }
 
-  .rect-India {
+  .rect-India-1 {
     position: absolute;
     width: 106px;
     height: 76px;    
-    background: #14191F;
+    background: #1c2227;
+    top: 0;
+    left: -4px;
+    z-index: 1;
+  }
+
+  .rect-India-2 {
+    position: absolute;
+    width: 106px;
+    height: 76px;    
+    background: #191D24;
     top: 0;
     left: -4px;
     z-index: 1;
