@@ -155,9 +155,9 @@
   }
 
   .bg-image {
-    background-image: linear-gradient(180deg, #29343E 0%, rgba(41, 52, 62, 0.00) 100%), url(./../images/jpg/main_hill.jpg);    
+    background-image: linear-gradient(180deg, rgb(41, 52, 62, 1.80) 0%, rgba(41, 52, 62, 0.00) 100%), url(./../images/jpg/main_hill.jpg);    
     background-size: cover;
-    background-position: right 40% bottom 10%;
+    background-position: right 40% bottom 20%;
   }
 
   .about {
@@ -885,7 +885,7 @@
   position: relative;  
   width: 100%;
   min-height: 646px;
-  background-image:  url(./../../images/jpg/calendar.jpg);  
+  background-image:  url(./../images/jpg/calendar.jpg);  
   background-size: cover; 
 }
 
@@ -1258,6 +1258,7 @@
 
 .pak_fall {
   padding: 140px 199px 0 203px;
+  margin-bottom: -70px;
 
   h4 {
     max-width: 906px;    
@@ -1307,7 +1308,7 @@
 }
 
 .fall_subt-left {
-  margin-left: -123px;
+  margin-left: -53px;
   margin-right: 70px; 
 }
 
@@ -1367,12 +1368,16 @@
 .art_tours {
   min-height: 865px;
   width: 100%;
-  padding: 317px 123px 0 200px;
+  padding: 317px 123px 0 200px;  
 
   #tours {
     position: absolute;
     left: 296px;
   }
+}
+
+.art_bg-image {
+  background: linear-gradient(180deg, rgba(41, 52, 62, 6.80) 0%, rgba(41, 52, 62, 0.60) 100%), url(./../images/jpg/main_hill.jpg);    
 }
 
 .add_hill {
@@ -1587,14 +1592,14 @@
 .cruise_item-1 {    
   width: 1600px;
   height: 555px; 
-  background-image: url(./../../images/jpg/cruise_item-1.jpg);    
+  background-image: url(./../images/jpg/cruise_item-1.jpg);    
   background-repeat: no-repeat;  
 }
 
 .cruise_item-2 {    
   width: 1600px;
   height: 555px; 
-  background-image: url(./../../images/jpg/cruise_item-2.jpg);   
+  background-image: url(./../images/jpg/cruise_item-2.jpg);   
   background-repeat: no-repeat;
   background-position: 0 53%;
   background-size: cover;

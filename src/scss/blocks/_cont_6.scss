@@ -328,7 +328,7 @@
     } 
     
     &::-webkit-scrollbar-button:single-button:horizontal:decrement {
-        background-image: url(./../../images/svg/impr_arr_left.svg);
+        background-image: url(./images/svg/impr_arr_left.svg);
         background-size: contain;
         background-repeat: no-repeat;
         border-top: 5px solid #273641;
@@ -336,7 +336,7 @@
     }
 
     &::-webkit-scrollbar-button:horizontal:increment {
-        background-image: url(./../../images/svg/impr_arr_right.svg);
+        background-image: url(./images/svg/impr_arr_right.svg);
         background-size: contain;
         background-repeat: no-repeat;
         border-top: 5px solid #273641;
@@ -395,14 +395,14 @@
 .program_item-1 {    
     width: 1606px;
     height: 555px; 
-    background-image: url(./../../images/jpg/program_1.jpg);    
+    background-image: url(./../images/jpg/program_1.jpg);    
     background-repeat: no-repeat;
 }
 
 .program_item-2 {    
     width: 1606px;
     height: 555px; 
-    background-image: url(./../../images/jpg/program_2.jpg);   
+    background-image: url(./../images/jpg/program_2.jpg);   
     background-repeat: no-repeat;
 }
 
@@ -514,7 +514,7 @@
                 font-weight: 400;
                 line-height: 160%; /* 25.6px */
                 letter-spacing: -0.32px;
-                list-style-image: url(./../../images/svg/list_marker.svg);                
+                list-style-image: url(./images/svg/list_marker.svg);                
                 
             }
         }
